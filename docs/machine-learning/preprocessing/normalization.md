@@ -18,7 +18,7 @@ $samples = [
 ];
 
 $normalizer = new Normalizer();
-$normalizer->preprocess($samples);
+$normalizer->transform($samples);
 
 /*
 $samples = [
@@ -46,7 +46,7 @@ $samples = [
 ];
 
 $normalizer = new Normalizer(Normalizer::NORM_L1);
-$normalizer->preprocess($samples);
+$normalizer->transform($samples);
 
 /*
 $samples = [
