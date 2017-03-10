@@ -33,7 +33,7 @@ $data = [
     [8, 7, null, 5],
 ];
 
-$imputer = new Imputer(null, new MeanStrategy(), Imputer::AXIS_COLUMN);
+$imputer = new Imputer(null, new MeanStrategy(), Imputer::AXIS_COLUMN, $data);
 $imputer->transform($data);
 
 /*
